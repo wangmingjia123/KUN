@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>游戏精彩集锦 - Wang Ming</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/highlights.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+  <script src="js/highlightsPage.js" defer></script>
+</head>
+<body>
+  <div class="container highlights-page">
+    <header class="page-header">
+      <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        <span>返回首页</span>
+      </a>
+      <h1 class="page-title">游戏精彩集锦</h1>
+    </header>
+
+    <div class="glass-card main-video-card">
+      <div class="featured-video">
+        <div class="video-placeholder" id="mainVideoContainer">
+          <div class="video-overlay">
+            <i class="fas fa-play-circle"></i>
+            <span>点击播放</span>
+          </div>
+          <div class="main-video-container">
+            <img id="mainVideoThumb" class="main-video-thumb" src="images/vid1.jpg" alt="视频缩略图">
+          </div>
+        </div>
+        <div class="video-info">
+          <h2 id="videoTitle">CSGO竞技模式五杀精彩操作</h2>
+          <div class="video-meta">
+            <span><i class="fas fa-calendar"></i> 2023-03-15</span>
+            <span><i class="fas fa-eye"></i> 3.2K 观看</span>
+            <span><i class="fas fa-thumbs-up"></i> 245 点赞</span>
+          </div>
+          <p class="video-description" id="videoDescription">
+            在Mirage地图上的精彩五杀操作，使用AK-47在A区完成惊人的反杀。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="videos-filter">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="ace">五杀</button>
+        <button class="filter-btn" data-filter="clutch">残局</button>
+        <button class="filter-btn" data-filter="highlights">高光时刻</button>
+        <button class="filter-btn" data-filter="competition">比赛实况</button>
+      </div>
+      <div class="sort-options">
+        <select class="sort-select" aria-label="视频排序方式">
+          <option value="latest">最新发布</option>
+          <option value="popular">最受欢迎</option>
+          <option value="oldest">最早发布</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="videos-grid">
+      <div class="glass-card video-card" data-category="ace" data-video="video/video.mp4" data-date="2023-02-10" data-views="1500">
+        <div class="video-thumbnail">
+          <div class="thumbnail-image" style="background-image: url('images/vid1.jpg');"></div>
+          <div class="video-duration">2:45</div>
+          <div class="play-overlay">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="video-content">
+          <h3 class="video-card-title">Dust II五杀集锦</h3>
+          <div class="video-details">
+            <span class="video-card-date">2023-02-10</span>
+            <span class="video-card-views">1.5K 观看</span>
+          </div>
+          <p class="video-card-desc">精彩的五杀操作，展示了出色的枪法和意识判断能力。</p>
+        </div>
+      </div>
+
+      <div class="glass-card video-card" data-category="clutch" data-video="video/video.mp4" data-date="2023-01-25" data-views="2700">
+        <div class="video-thumbnail">
+          <div class="thumbnail-image" style="background-image: url('images/vid2.jpg');"></div>
+          <div class="video-duration">3:18</div>
+          <div class="play-overlay">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="video-content">
+          <h3 class="video-card-title">1v4残局AWP神操作</h3>
+          <div class="video-details">
+            <span class="video-card-date">2023-01-25</span>
+            <span class="video-card-views">2.7K 观看</span>
+          </div>
+          <p class="video-card-desc">惊险的残局表现，在劣势情况下完成了不可能的任务。</p>
+        </div>
+      </div>
+
+      <div class="glass-card video-card" data-category="highlights" data-video="video/video.mp4" data-date="2022-12-31" data-views="5400">
+        <div class="video-thumbnail">
+          <div class="thumbnail-image" style="background-image: url('images/vid3.jpg');"></div>
+          <div class="video-duration">4:20</div>
+          <div class="play-overlay">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="video-content">
+          <h3 class="video-card-title">2022年度最佳操作合集</h3>
+          <div class="video-details">
+            <span class="video-card-date">2022-12-31</span>
+            <span class="video-card-views">5.4K 观看</span>
+          </div>
+          <p class="video-card-desc">精彩操作集锦，展示了各种高水平的游戏技术和战术理解。</p>
+        </div>
+      </div>
+
+      <div class="glass-card video-card" data-category="competition" data-video="video/video.mp4" data-date="2023-03-05" data-views="3800">
+        <div class="video-thumbnail">
+          <div class="thumbnail-image" style="background-image: url('images/vid4.jpg');"></div>
+          <div class="video-duration">8:15</div>
+          <div class="play-overlay">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="video-content">
+          <h3 class="video-card-title">地区联赛决赛精彩片段</h3>
+          <div class="video-details">
+            <span class="video-card-date">2023-03-05</span>
+            <span class="video-card-views">3.8K 观看</span>
+          </div>
+          <p class="video-card-desc">比赛中的关键回合，充分展示了团队配合和个人能力。</p>
+        </div>
+      </div>
+
+      <div class="glass-card video-card" data-category="ace" data-video="video/video.mp4" data-date="2023-02-18" data-views="2100">
+        <div class="video-thumbnail">
+          <div class="thumbnail-image" style="background-image: url('images/vid5.jpg');"></div>
+          <div class="video-duration">2:10</div>
+          <div class="play-overlay">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="video-content">
+          <h3 class="video-card-title">Inferno手枪局五杀</h3>
+          <div class="video-details">
+            <span class="video-card-date">2023-02-18</span>
+            <span class="video-card-views">2.1K 观看</span>
+          </div>
+          <p class="video-card-desc">手枪局中完成的五杀，展示了出色的瞄准和走位技巧。</p>
+        </div>
+      </div>
+
+      <div class="glass-card video-card" data-category="clutch" data-video="video/video.mp4" data-date="2023-01-15" data-views="1900">
+        <div class="video-thumbnail">
+          <div class="thumbnail-image" style="background-image: url('images/vid6.jpg');"></div>
+          <div class="video-duration">3:45</div>
+          <div class="play-overlay">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="video-content">
+          <h3 class="video-card-title">1v3残局拆包成功</h3>
+          <div class="video-details">
+            <span class="video-card-date">2023-01-15</span>
+            <span class="video-card-views">1.9K 观看</span>
+          </div>
+          <p class="video-card-desc">在极限时间内成功拆除炸弹，展示了沉着冷静的心理素质。</p>
+        </div>
+      </div>
+
+      <div class="glass-card video-card" data-category="highlights" data-video="video/video.mp4" data-date="2022-11-20" data-views="4200">
+        <div class="video-thumbnail">
+          <div class="thumbnail-image" style="background-image: url('images/vid7.jpg');"></div>
+          <div class="video-duration">5:30</div>
+          <div class="play-overlay">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="video-content">
+          <h3 class="video-card-title">连续爆头精彩集锦</h3>
+          <div class="video-details">
+            <span class="video-card-date">2022-11-20</span>
+            <span class="video-card-views">4.2K 观看</span>
+          </div>
+          <p class="video-card-desc">精准的爆头集锦，展示了稳定的瞄准和出色的反应速度。</p>
+        </div>
+      </div>
+
+      <div class="glass-card video-card" data-category="competition" data-video="video/video.mp4" data-date="2023-03-12" data-views="2500">
+        <div class="video-thumbnail">
+          <div class="thumbnail-image" style="background-image: url('images/vid8.jpg');"></div>
+          <div class="video-duration">7:50</div>
+          <div class="play-overlay">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+        <div class="video-content">
+          <h3 class="video-card-title">团队战术配合集锦</h3>
+          <div class="video-details">
+            <span class="video-card-date">2023-03-12</span>
+            <span class="video-card-views">2.5K 观看</span>
+          </div>
+          <p class="video-card-desc">完美的团队战术配合，展示了优秀的战术执行和团队协作。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <a href="#" class="page-link active">1</a>
+      <a href="#" class="page-link">2</a>
+      <a href="#" class="page-link">3</a>
+      <span class="page-dots">...</span>
+      <a href="#" class="page-link">5</a>
+    </div>
+    
+    <!-- 新增板块：游戏统计数据 -->
+    <section class="stats-section">
+      <h2 class="section-title">游戏数据统计</h2>
+      <div class="glass-card stats-card">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fas fa-crosshairs"></i></div>
+            <div class="stat-value" data-value="68">0</div>
+            <div class="stat-label">爆头率</div>
+            <div class="stat-bar"><div class="stat-fill" data-width="68" style="width: 0%"></div></div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+            <div class="stat-value" data-value="59">0</div>
+            <div class="stat-label">胜率</div>
+            <div class="stat-bar"><div class="stat-fill" data-width="59" style="width: 0%"></div></div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fas fa-skull"></i></div>
+            <div class="stat-value" data-value="182">0</div>
+            <div class="stat-label">K/D比（x100）</div>
+            <div class="stat-bar"><div class="stat-fill" data-width="75" style="width: 0%"></div></div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fas fa-bullseye"></i></div>
+            <div class="stat-value" data-value="84">0</div>
+            <div class="stat-label">命中率</div>
+            <div class="stat-bar"><div class="stat-fill" data-width="84" style="width: 0%"></div></div>
+          </div>
+        </div>
+        <a href="stats.html" class="view-more-btn">查看详细数据</a>
+      </div>
+    </section>
+    
+    <!-- 新增板块：热门装备 -->
+    <section class="equipment-section">
+      <h2 class="section-title">我的热门装备</h2>
+      <div class="equipment-grid">
+        <div class="glass-card equipment-card">
+          <div class="equipment-image" style="background-image: url('images/equipment1.jpg')"></div>
+          <div class="equipment-content">
+            <h3 class="equipment-title">AK-47 | 血腥运动</h3>
+            <div class="equipment-meta">
+              <span class="equipment-type">突击步枪</span>
+              <span class="equipment-rarity rare">稀有</span>
+            </div>
+            <div class="equipment-stats">
+              <div class="equipment-stat">
+                <div class="stat-name">使用率</div>
+                <div class="stat-value">38%</div>
+              </div>
+              <div class="equipment-stat">
+                <div class="stat-name">爆头率</div>
+                <div class="stat-value">72%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card equipment-card">
+          <div class="equipment-image" style="background-image: url('images/equipment2.jpg')"></div>
+          <div class="equipment-content">
+            <h3 class="equipment-title">AWP | 梦魇</h3>
+            <div class="equipment-meta">
+              <span class="equipment-type">狙击步枪</span>
+              <span class="equipment-rarity legendary">传说</span>
+            </div>
+            <div class="equipment-stats">
+              <div class="equipment-stat">
+                <div class="stat-name">使用率</div>
+                <div class="stat-value">22%</div>
+              </div>
+              <div class="equipment-stat">
+                <div class="stat-name">爆头率</div>
+                <div class="stat-value">95%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card equipment-card">
+          <div class="equipment-image" style="background-image: url('images/equipment3.jpg')"></div>
+          <div class="equipment-content">
+            <h3 class="equipment-title">USP-S | 不夜城</h3>
+            <div class="equipment-meta">
+              <span class="equipment-type">手枪</span>
+              <span class="equipment-rarity uncommon">罕见</span>
+            </div>
+            <div class="equipment-stats">
+              <div class="equipment-stat">
+                <div class="stat-name">使用率</div>
+                <div class="stat-value">15%</div>
+              </div>
+              <div class="equipment-stat">
+                <div class="stat-name">爆头率</div>
+                <div class="stat-value">64%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="inventory.html" class="view-more-btn">查看完整皮肤库</a>
+    </section>
+    
+    <!-- 新增板块：比赛日程 -->
+    <section class="tournament-section">
+      <h2 class="section-title">即将参加的比赛</h2>
+      <div class="glass-card tournament-card">
+        <div class="tournament-list">
+          <div class="tournament-item">
+            <div class="tournament-date">
+              <div class="date-day">15</div>
+              <div class="date-month">6月</div>
+            </div>
+            <div class="tournament-details">
+              <h3 class="tournament-name">完美世界城市邀请赛</h3>
+              <div class="tournament-location"><i class="fas fa-map-marker-alt"></i> 上海电竞中心</div>
+              <div class="tournament-time"><i class="fas fa-clock"></i> 14:00 - 18:00</div>
+            </div>
+            <div class="tournament-status upcoming">即将开始</div>
+          </div>
+          <div class="tournament-item">
+            <div class="tournament-date">
+              <div class="date-day">22</div>
+              <div class="date-month">6月</div>
+            </div>
+            <div class="tournament-details">
+              <h3 class="tournament-name">PWL 2023季中赛</h3>
+              <div class="tournament-location"><i class="fas fa-map-marker-alt"></i> 北京国家体育馆</div>
+              <div class="tournament-time"><i class="fas fa-clock"></i> 10:00 - 20:00</div>
+            </div>
+            <div class="tournament-status confirmed">已确认</div>
+          </div>
+          <div class="tournament-item">
+            <div class="tournament-date">
+              <div class="date-day">8</div>
+              <div class="date-month">7月</div>
+            </div>
+            <div class="tournament-details">
+              <h3 class="tournament-name">夏季电竞嘉年华</h3>
+              <div class="tournament-location"><i class="fas fa-map-marker-alt"></i> 广州电竞馆</div>
+              <div class="tournament-time"><i class="fas fa-clock"></i> 13:30 - 19:00</div>
+            </div>
+            <div class="tournament-status pending">待确认</div>
+          </div>
+        </div>
+        <a href="tournaments.html" class="view-more-btn">查看全部比赛</a>
+      </div>
+    </section>
+  </div>
+  
+  <div class="background">
+    <div class="particles"></div>
+  </div>
+  
+  <!-- 视频弹窗 -->
+  <div id="videoModal" class="video-modal">
+    <div class="video-modal-content">
+      <div class="close-modal" id="closeModal">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="modal-video-container">
+        <video id="modalVideo" class="modal-video" controls>
+          <source src="video/video.mp4" type="video/mp4">
+          <source src="video/video.webm" type="video/webm">
+          <source src="video/video.ogv" type="video/ogg">
+          <p>您的浏览器不支持HTML5视频播放。</p>
+        </video>
+        <button class="toggle-fit-mode" id="toggleFitMode">切换显示方式</button>
+      </div>
+      <div class="video-modal-info">
+        <h3 id="modalVideoTitle">视频标题</h3>
+        <div class="video-modal-meta">
+          <span id="modalVideoDate"><i class="fas fa-calendar"></i> 日期</span>
+          <span id="modalVideoViews"><i class="fas fa-eye"></i> 观看次数</span>
+        </div>
+        <p id="modalVideoDescription" class="video-modal-description">视频描述...</p>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2023 Wang Ming. All rights reserved.</p>
+  </footer>
+</body>
+</html> 

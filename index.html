@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wang Ming - 个人主页</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="glass-card profile">
+      <div class="profile-header">
+        <div class="avatar-container">
+          <div class="avatar">
+            <img src="images/avatar.jpg" alt="Wang Ming" class="avatar-img">
+          </div>
+        </div>
+        <h1 class="name">Wang Ming</h1>
+        <p class="bio">CSGO 玩家 & 电竞爱好者</p>
+      </div>
+      
+      <div class="social-icons">
+        <a href="https://qm.qq.com/q/Zirz7VYbkG" class="social-icon qq" title="QQ: 2865748241" data-tooltip="QQ">
+          <i class="fab fa-qq"></i>
+          <span class="tooltip">QQ</span>
+        </a>
+        <a href="https://v.douyin.com/oNcUs_9Mfvw/" class="social-icon douyin" title="抖音: 1116406056" data-tooltip="抖音">
+          <i class="fab fa-tiktok"></i>
+          <span class="tooltip">抖音</span>
+        </a>
+        <a href="https://www.instagram.com/wangmingja2?igsh=ZDY3djdhdDAwdDhl" class="social-icon instagram" title="Instagram: wangmingja2" data-tooltip="Instagram">
+          <i class="fab fa-instagram"></i>
+          <span class="tooltip">Instagram</span>
+        </a>
+      </div>
+      
+      <div class="social-links">
+        <div class="social-info qq-info">
+          <span class="social-label">QQ:</span>
+          <span class="social-value">2865748241</span>
+        </div>
+        <div class="social-info douyin-info">
+          <span class="social-label">抖音:</span>
+          <span class="social-value">1116406056</span>
+        </div>
+        <div class="social-info insta-info">
+          <span class="social-label">Instagram:</span>
+          <span class="social-value">wangmingja2</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="glass-card about">
+      <h2>关于我</h2>
+      <p>嗨，我是Wang Ming！热爱CSGO游戏和电竞文化，擅长枪法和战术配合。</p>
+      <p>欢迎通过上方的社交媒体联系我，一起开黑或讨论游戏战术与技巧。</p>
+      <div class="about-buttons">
+        <a href="about.html" class="about-btn">
+          <i class="fas fa-user-circle"></i>
+          <span>个人简介</span>
+        </a>
+        <a href="about.html#gallery" class="about-btn gallery-btn">
+          <i class="fas fa-trophy"></i>
+          <span>游戏时刻</span>
+        </a>
+        <a href="about.html#interests" class="about-btn interests-btn">
+          <i class="fas fa-gamepad"></i>
+          <span>游戏爱好</span>
+        </a>
+        <a href="about.html#journey" class="about-btn journey-btn">
+          <i class="fas fa-chart-line"></i>
+          <span>游戏历程</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="glass-card skills">
+      <h2>我的技能</h2>
+      <div class="skill-bars">
+        <div class="skill">
+          <span>枪法技巧</span>
+          <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+        </div>
+        <div class="skill">
+          <span>战术配合</span>
+          <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+        </div>
+        <div class="skill">
+          <span>意识判断</span>
+          <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+        </div>
+      </div>
+      
+      <div class="stats-cards">
+        <a href="stats.html" class="stats-card">
+          <div class="stats-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>游戏数据</h3>
+          <p>完美世界电竞平台 - 马嘉棋是爆米花们的光</p>
+          <div class="stats-highlights">
+            <div class="stat-item">
+              <span class="stat-value">34</span>
+              <span class="stat-label">赛季场次</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">1.23</span>
+              <span class="stat-label">K/D比</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">10.0</span>
+              <span class="stat-label">WE刷题评价</span>
+            </div>
+          </div>
+          <span class="view-more">查看详细数据 <i class="fas fa-arrow-right"></i></span>
+        </a>
+        
+        <a href="highlights.html" class="stats-card">
+          <div class="stats-icon"><i class="fas fa-video"></i></div>
+          <h3>精彩集锦</h3>
+          <p>我的游戏高光时刻</p>
+          <div class="video-thumbnail">
+            <i class="fas fa-play-circle"></i>
+            <img src="images/vid2.jpg" alt="精彩集锦" class="video-thumbnail-img">
+            <span class="video-duration">2:45</span>
+          </div>
+          <span class="view-more">观看精彩集锦 <i class="fas fa-arrow-right"></i></span>
+        </a>
+        
+        <a href="setup.html" class="stats-card">
+          <div class="stats-icon"><i class="fas fa-cog"></i></div>
+          <h3>游戏设置</h3>
+          <p>我的硬件与游戏设置</p>
+          <div class="setup-preview">
+            <div class="setup-item">
+              <span class="setup-label">鼠标</span>
+              <span class="setup-value">罗技G Pro X</span>
+            </div>
+            <div class="setup-item">
+              <span class="setup-label">键盘</span>
+              <span class="setup-value">赛睿Apex Pro</span>
+            </div>
+          </div>
+          <span class="view-more">查看完整设置 <i class="fas fa-arrow-right"></i></span>
+        </a>
+        
+        <a href="https://steamcommunity.com/profiles/76561199212052823/" target="_blank" rel="noopener noreferrer" class="stats-card">
+          <div class="stats-icon"><i class="fab fa-steam"></i></div>
+          <h3>Steam资料</h3>
+          <p>我的Steam游戏档案</p>
+          <div class="steam-preview">
+            <div class="steam-item">
+              <span class="steam-label">游戏时长</span>
+              <span class="steam-value">370小时</span>
+            </div>
+            <div class="steam-item">
+              <span class="steam-label">等级</span>
+              <span class="steam-value">3级</span>
+            </div>
+          </div>
+          <span class="view-more">访问Steam主页 <i class="fas fa-external-link-alt"></i></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="background">
+    <div class="particles"></div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2023 Wang Ming. All rights reserved.</p>
+  </footer>
+</body>
+</html> 

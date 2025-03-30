@@ -1,0 +1,472 @@
+/* 游戏设置页面样式 */
+.setup-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(-5px);
+}
+
+.back-button i {
+  margin-right: 0.5rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 设置概览 */
+.setup-overview {
+  margin-bottom: 2rem;
+}
+
+.setup-intro {
+  padding: 2rem;
+}
+
+.setup-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.setup-header i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--primary-color);
+}
+
+.setup-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.setup-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.setup-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.highlight-item {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.highlight-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.highlight-label {
+  font-size: 0.9rem;
+  color: var(--muted-color);
+}
+
+/* 标签页 */
+.setup-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+  padding: 0.8rem 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.tab-btn.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* 内容区域 */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 硬件设备 */
+.hardware-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hardware-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.hardware-card:hover {
+  transform: translateY(-5px);
+}
+
+.hardware-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  align-self: center;
+}
+
+.hardware-details {
+  flex: 1;
+}
+
+.hardware-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.hardware-model {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.hardware-specs {
+  font-size: 0.9rem;
+  color: var(--muted-color);
+  text-align: center;
+}
+
+/* 游戏设置 */
+.settings-group {
+  margin-bottom: 2rem;
+}
+
+.settings-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--primary-color);
+}
+
+.settings-card {
+  padding: 1.5rem;
+}
+
+.settings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.settings-table tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.settings-table tr:last-child {
+  border-bottom: none;
+}
+
+.settings-table td {
+  padding: 0.8rem 0;
+}
+
+.settings-table td:first-child {
+  font-weight: 500;
+  width: 40%;
+}
+
+.settings-table td:last-child {
+  color: var(--primary-color);
+}
+
+/* 准星设置 */
+.crosshair-preview {
+  margin-bottom: 2rem;
+}
+
+.preview-card {
+  padding: 1.5rem;
+}
+
+.preview-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.preview-header h3 {
+  font-size: 1.2rem;
+}
+
+.crosshair-display {
+  width: 100%;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.crosshair-display::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/crosshair-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.crosshair-image {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path d="M14,9 L14,0 L16,0 L16,9 L14,9 Z M14,21 L14,30 L16,30 L16,21 L14,21 Z M21,14 L30,14 L30,16 L21,16 L21,14 Z M0,14 L9,14 L9,16 L0,16 L0,14 Z" fill="%2300ff00" /></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.crosshair-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.action-btn i {
+  margin-right: 0.5rem;
+}
+
+.config-card {
+  padding: 1.5rem;
+}
+
+.config-header {
+  margin-bottom: 1.5rem;
+}
+
+.config-header h3 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.config-code {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.config-code pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: monospace;
+  color: #00ff00;
+  line-height: 1.5;
+}
+
+.config-instructions {
+  font-size: 0.9rem;
+  color: var(--muted-color);
+  text-align: center;
+}
+
+/* 视频设置 */
+.launch-options {
+  margin-top: 2rem;
+}
+
+.options-card {
+  padding: 1.5rem;
+}
+
+.options-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.options-code {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.options-code pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: monospace;
+  color: #00ff00;
+}
+
+.options-description {
+  font-size: 0.9rem;
+  color: var(--muted-color);
+  text-align: center;
+}
+
+/* 建议区域 */
+.advice-section {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.advice-card {
+  padding: 2rem;
+}
+
+.advice-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.advice-header i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #f9ca24;
+}
+
+.advice-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.advice-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.advice-list {
+  padding-left: 1.5rem;
+}
+
+.advice-list li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.advice-list li::marker {
+  color: var(--primary-color);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .hardware-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .setup-highlights {
+    flex-direction: column;
+  }
+  
+  .highlight-item {
+    flex: none;
+  }
+  
+  .crosshair-actions {
+    flex-direction: column;
+  }
+  
+  .action-btn {
+    width: 100%;
+  }
+} 

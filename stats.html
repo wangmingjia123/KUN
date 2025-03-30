@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的游戏数据 - Wang Ming</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/stats.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="js/statsPage.js" defer></script>
+</head>
+<body>
+  <div class="container stats-page">
+    <header class="page-header">
+      <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        <span>返回首页</span>
+      </a>
+      <h1 class="page-title">我的游戏数据</h1>
+    </header>
+
+    <div class="glass-card profile-card">
+      <div class="profile-data">
+        <div class="avatar-container">
+          <img src="images/avatar.jpg" alt="Wang Ming" class="avatar-img">
+        </div>
+        <div class="profile-info">
+          <h2 class="player-name">马嘉棋是爆米花们的光</h2>
+          <div class="profile-tags">
+            <span class="profile-tag level">Lv.14</span>
+            <span class="profile-tag rank">信誉等级 <i class="fas fa-shield-alt"></i></span>
+          </div>
+          <div class="csgo-info">
+            <div class="csgo-detail">
+              <i class="fas fa-gamepad"></i>
+              <span>完美战力卡未上榜</span>
+            </div>
+            <div class="csgo-detail">
+              <i class="fas fa-users"></i>
+              <span>暂无战队</span>
+            </div>
+          </div>
+        </div>
+        <div class="profile-stats">
+          <div class="stat-box">
+            <span class="stat-value">1542</span>
+            <span class="stat-label">组排历史</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value">1453</span>
+            <span class="stat-label">组排当前</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="glass-card stats-card main-stats">
+        <h2>主要数据</h2>
+        <div class="score-circles">
+          <div class="score-circle">
+            <div class="circle-content">
+              <span class="circle-value">10.0</span>
+              <span class="circle-label">WE刷题评价</span>
+            </div>
+          </div>
+          <div class="score-circle">
+            <div class="circle-content">
+              <span class="circle-value">1.22</span>
+              <span class="circle-label">Rating Pro</span>
+            </div>
+          </div>
+        </div>
+        <div class="stats-details">
+          <div class="stats-row">
+            <div class="stat-detail">
+              <span class="detail-label">赛季场次</span>
+              <span class="detail-value">34</span>
+            </div>
+            <div class="stat-detail">
+              <span class="detail-label">胜率</span>
+              <span class="detail-value">41%</span>
+            </div>
+            <div class="stat-detail">
+              <span class="detail-label">爆头率</span>
+              <span class="detail-value">34.3%</span>
+            </div>
+          </div>
+          <div class="stats-row">
+            <div class="stat-detail">
+              <span class="detail-label">ADR</span>
+              <span class="detail-value">92</span>
+            </div>
+            <div class="stat-detail">
+              <span class="detail-label">K/D</span>
+              <span class="detail-value">1.23</span>
+            </div>
+            <div class="stat-detail">
+              <span class="detail-label">RWS</span>
+              <span class="detail-value">10.03</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card stats-card performance-chart">
+        <h2>表现趋势</h2>
+        <div class="chart-container">
+          <canvas id="performanceChart"></canvas>
+        </div>
+      </div>
+
+      <div class="glass-card stats-card weapon-stats">
+        <h2>武器使用情况</h2>
+        <div class="weapons-list">
+          <div class="weapon-item">
+            <div class="weapon-icon">
+              <i class="fas fa-crosshairs"></i>
+              <span>AK-47</span>
+            </div>
+            <div class="weapon-data">
+              <div class="weapon-stat">
+                <span class="weapon-stat-label">击杀</span>
+                <span class="weapon-stat-value">345</span>
+              </div>
+              <div class="weapon-stat">
+                <span class="weapon-stat-label">爆头率</span>
+                <span class="weapon-stat-value">38%</span>
+              </div>
+              <div class="weapon-bar">
+                <div class="weapon-progress" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="weapon-item">
+            <div class="weapon-icon">
+              <i class="fas fa-crosshairs"></i>
+              <span>AWP</span>
+            </div>
+            <div class="weapon-data">
+              <div class="weapon-stat">
+                <span class="weapon-stat-label">击杀</span>
+                <span class="weapon-stat-value">221</span>
+              </div>
+              <div class="weapon-stat">
+                <span class="weapon-stat-label">爆头率</span>
+                <span class="weapon-stat-value">31%</span>
+              </div>
+              <div class="weapon-bar">
+                <div class="weapon-progress" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="weapon-item">
+            <div class="weapon-icon">
+              <i class="fas fa-crosshairs"></i>
+              <span>M4A4</span>
+            </div>
+            <div class="weapon-data">
+              <div class="weapon-stat">
+                <span class="weapon-stat-label">击杀</span>
+                <span class="weapon-stat-value">187</span>
+              </div>
+              <div class="weapon-stat">
+                <span class="weapon-stat-label">爆头率</span>
+                <span class="weapon-stat-value">33%</span>
+              </div>
+              <div class="weapon-bar">
+                <div class="weapon-progress" style="width: 55%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="weapon-item">
+            <div class="weapon-icon">
+              <i class="fas fa-crosshairs"></i>
+              <span>Desert Eagle</span>
+            </div>
+            <div class="weapon-data">
+              <div class="weapon-stat">
+                <span class="weapon-stat-label">击杀</span>
+                <span class="weapon-stat-value">98</span>
+              </div>
+              <div class="weapon-stat">
+                <span class="weapon-stat-label">爆头率</span>
+                <span class="weapon-stat-value">45%</span>
+              </div>
+              <div class="weapon-bar">
+                <div class="weapon-progress" style="width: 35%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card stats-card map-stats">
+        <h2>地图表现</h2>
+        <div class="maps-list">
+          <div class="map-item">
+            <div class="map-name">Mirage</div>
+            <div class="map-stats">
+              <div class="map-win-rate">
+                <span class="win-rate-label">胜率</span>
+                <span class="win-rate-value">58%</span>
+              </div>
+              <div class="map-matches">
+                <span class="matches-label">场次</span>
+                <span class="matches-value">12</span>
+              </div>
+            </div>
+            <div class="map-bar">
+              <div class="map-progress" style="width: 58%"></div>
+            </div>
+          </div>
+          <div class="map-item">
+            <div class="map-name">Inferno</div>
+            <div class="map-stats">
+              <div class="map-win-rate">
+                <span class="win-rate-label">胜率</span>
+                <span class="win-rate-value">45%</span>
+              </div>
+              <div class="map-matches">
+                <span class="matches-label">场次</span>
+                <span class="matches-value">9</span>
+              </div>
+            </div>
+            <div class="map-bar">
+              <div class="map-progress" style="width: 45%"></div>
+            </div>
+          </div>
+          <div class="map-item">
+            <div class="map-name">Dust II</div>
+            <div class="map-stats">
+              <div class="map-win-rate">
+                <span class="win-rate-label">胜率</span>
+                <span class="win-rate-value">62%</span>
+              </div>
+              <div class="map-matches">
+                <span class="matches-label">场次</span>
+                <span class="matches-value">8</span>
+              </div>
+            </div>
+            <div class="map-bar">
+              <div class="map-progress" style="width: 62%"></div>
+            </div>
+          </div>
+          <div class="map-item">
+            <div class="map-name">Overpass</div>
+            <div class="map-stats">
+              <div class="map-win-rate">
+                <span class="win-rate-label">胜率</span>
+                <span class="win-rate-value">40%</span>
+              </div>
+              <div class="map-matches">
+                <span class="matches-label">场次</span>
+                <span class="matches-value">5</span>
+              </div>
+            </div>
+            <div class="map-bar">
+              <div class="map-progress" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card stats-card inventory-preview">
+        <h2>库存价值: ¥39.80</h2>
+        <div class="inventory-items">
+          <div class="inventory-item">
+            <div class="item-image" style="background-image: url('images/skin1.jpg');"></div>
+            <div class="item-price">¥20.00</div>
+          </div>
+          <div class="inventory-item">
+            <div class="item-image" style="background-image: url('images/skin2.jpg');"></div>
+            <div class="item-price">¥19.80</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card stats-card setup-preview">
+        <h2>游戏设备</h2>
+        <div class="setup-items">
+          <div class="setup-item-card">
+            <div class="setup-item-icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="setup-item-name">显示器</div>
+          </div>
+          <div class="setup-item-card">
+            <div class="setup-item-icon">
+              <i class="fas fa-mouse"></i>
+            </div>
+            <div class="setup-item-name">鼠标</div>
+          </div>
+          <div class="setup-item-card">
+            <div class="setup-item-icon">
+              <i class="fas fa-keyboard"></i>
+            </div>
+            <div class="setup-item-name">键盘</div>
+          </div>
+          <div class="setup-item-card">
+            <div class="setup-item-icon">
+              <i class="fas fa-headphones"></i>
+            </div>
+            <div class="setup-item-name">耳机</div>
+          </div>
+        </div>
+        <a href="setup.html" class="view-all-btn">查看全部设备 <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="background">
+    <div class="particles"></div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2023 Wang Ming. All rights reserved.</p>
+  </footer>
+</body>
+</html> 
