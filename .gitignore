@@ -1,0 +1,27 @@
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# Build directories
+target/
+build/
+out/
+
+# Node modules
+node_modules/
+
+# Vue
+.DS_Store
+.env.local
+.env.*.local 
